@@ -24,5 +24,6 @@ func set_health(new_health: int) -> void:
 			heart.texture = TEXTURE_EMPTY
 
 
-func _on_player_health_changed(new_health) -> void:
-	set_health(new_health)
+
+func _on_player_health_changed(new_health):
+	pass # Replace with function body.
