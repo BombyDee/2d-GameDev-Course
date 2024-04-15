@@ -1,13 +1,14 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene load_steps=4 format=3 uid="uid://dane6afw5ihab"]
 
-[ext_resource type="PackedScene" path="res://practices/L6.P1.create_coins/ship_create_coins.tscn" id="1_x2knq"]
-[ext_resource type="Script" path="res://practices/L6.P1.create_coins/ship_create_coins.gd" id="2_ytyj5"]
+[ext_resource type="PackedScene" uid="uid://gttgp1gxtdwr" path="res://addons/gdquest_practice_framework/practice_solutions/L6.P1.create_coins/ship_create_coins.tscn" id="1_dp5ku"]
+[ext_resource type="Script" path="res://practices/L6.P1.create_coins/ship_create_coins.gd" id="2_saj1h"]
+[ext_resource type="PackedScene" uid="uid://bk4a7mn7ur8cg" path="res://practices/L6.P1.create_coins/coin.tscn" id="3_buqkk"]
 
 [node name="CreateCoins" type="Node2D"]
 
-[node name="Ship" type="Area2D" parent="." instance=ExtResource("1_x2knq")]
+[node name="Ship" parent="." instance=ExtResource("1_dp5ku")]
 position = Vector2(973, 541)
-script = ExtResource("2_ytyj5")
+script = ExtResource("2_saj1h")
 
 [node name="ExtraVisuals" type="Node" parent="."]
 
@@ -25,3 +26,15 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.219608, 0.317647, 0.776471, 1)
+
+[node name="Coin" parent="." instance=ExtResource("3_buqkk")]
+position = Vector2(453, 324)
+
+[node name="Coin2" parent="." instance=ExtResource("3_buqkk")]
+position = Vector2(605, 695)
+
+[node name="Coin3" parent="." instance=ExtResource("3_buqkk")]
+position = Vector2(1324, 246)
+
+[node name="Coin4" parent="." instance=ExtResource("3_buqkk")]
+position = Vector2(1208, 793)

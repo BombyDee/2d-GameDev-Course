@@ -8,6 +8,11 @@ var energy := 20.0
 
 
 func _ready() -> void:
+	area_entered.connect(_on_area_entered)
+	set_energy(0)
+	
+func set_energy(new_energy: int) -> void:
+	energy = new_energy
 	get_node("UI/EnergyBar").value = energy
 
 
@@ -24,4 +29,4 @@ func _process(delta: float) -> void:
 
 
 func _on_area_entered(area: Area2D) -> void:
-	pass
+	set_energy(energy + 20)
