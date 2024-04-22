@@ -33,4 +33,4 @@ position = Vector2(1290, 705)
 position = Vector2(1267, 271)
 
 [node name="RandomItemPlacer" parent="." instance=ExtResource("5_2istd")]
-position = Vector2(955, 528)
+position = Vector2(-2, -1)
